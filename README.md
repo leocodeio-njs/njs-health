@@ -6,7 +6,7 @@ pnpm add @nestjs/config @nestjs/terminus @nestjs/swagger @nestjs/axios prom-clie
 
 ```typescript
 // import helath module
-import { HealthModule } from './hea.module';
+import { HealthModule } from '@leocodeio-njs/njs-health';
 
 // Add the module to the imports array of your main module
 @Module({
