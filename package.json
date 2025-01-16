@@ -1,6 +1,6 @@
 {
   "name": "@leocodeio-njs/njs-health",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "basic health check module for nestjs",
   "author": "leocodeio",
   "license": "MIT",
@@ -8,6 +8,8 @@
     "registry": "https://npm.pkg.github.com",
     "access": "public"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prepublish": "npm run build",
     "build": "rimraf dist && nest build",
