@@ -4,6 +4,7 @@ import {
   HealthCheckService,
   HttpHealthIndicator,
   HealthCheck,
+  TypeOrmHealthIndicator,
   MemoryHealthIndicator,
   DiskHealthIndicator,
 } from '@nestjs/terminus';
@@ -12,7 +13,7 @@ import {
   ApiOperation,
   ApiResponse,
   ApiSecurity,
-} from '@nestjs/swagger';
+} from '@nestjs/swagger'; 
 import { PrometheusService } from './prometheus.service';
 import { Public } from '../common/decorators/api/public.decorator';
 
@@ -22,6 +23,7 @@ export class HealthController {
   constructor(
     private health: HealthCheckService,
     private http: HttpHealthIndicator,
+    private db: TypeOrmHealthIndicator,
     private memory: MemoryHealthIndicator,
     private disk: DiskHealthIndicator,
     private readonly configService: ConfigService,
@@ -53,6 +55,9 @@ export class HealthController {
           thresholdPercent: 0.9, // 90% threshold
           path: '/',
         }),
+
+      // Database connectivity check - simple ping
+      () => this.db.pingCheck('database'),
     ]);
 
     // Record metrics for monitoring
@@ -78,6 +83,9 @@ export class HealthController {
   })
   async checkReadiness() {
     const healthCheck = await this.health.check([
+      // Database health check
+      () => this.db.pingCheck('database', { timeout: 3000 }),
+
       // External dependencies health checks (if configured)
       ...this.getExternalHealthChecks(),
     ]);
