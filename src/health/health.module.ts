@@ -15,37 +15,11 @@ import Joi from 'joi';
       envFilePath: ['.env.local', '.env'],
       // Add social media configuration variables
       validationSchema: Joi.object({
-        // Existing validation
-
-        // APP PORT
-        PORT: Joi.number().default(3000).required(),
-
-        // DATABASE CONFIGURATION
-        DB_HOST: Joi.string().default('localhost').required(),
-        DB_USERNAME: Joi.string().default('postgres').required(),
-        DB_PASSWORD: Joi.string().default('postgres').required(),
-        DB_DATABASE: Joi.string().default('postgres').required(),
-        DB_SCHEMA: Joi.string().default('test').required(),
-        DB_PORT: Joi.number().default(5432).required(),
-
-        //rate limit
-        RATE_LIMIT_POINTS: Joi.number().default(100).required(),
-        RATE_LIMIT_DURATION: Joi.number()
-          .default(60 * 60)
-          .required(), // Per hour
-        RATE_LIMIT_BLOCK_DURATION: Joi.number()
-          .default(5 * 60)
-          .required(), // 5min block if exceeded
-
-        // guards
-        // apikey guard
-        APP_KEY: Joi.string().default('apikey').required(),
-        // acess token guard
-        ACCESS_TOKEN_VALIDATION_URL: Joi.string()
-          .default('http://localhost:3000/validate')
-          .required(),
-        AUTHORIZER_API_KEY: Joi.string().default('validkey1').required(),
-        CLUSTER_CLIENT_ID: Joi.string().default('validclient1').required(),
+        // DB AND MEMORY
+        ENABLE_DB_HEALTH: Joi.boolean().default(true).required(),
+        ENABLE_MEMORY_HEALTH: Joi.boolean().default(true).required(),
+        ENABLE_DISK_HEALTH: Joi.boolean().default(true).required(),
+        EXTERNAL_DEPENDENCY_API_ENDPOINTS: Joi.object().default({}).optional(),
       }),
     }),
     TerminusModule.forRoot({
