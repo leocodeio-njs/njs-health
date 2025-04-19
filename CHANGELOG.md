@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/leocodeio-njs/njs-health/compare/v1.0.0...v1.0.1) (2025-04-19)
+
+
+### Performance Improvements
+
+* **add api check with env:** add api check with env ([dac76e3](https://github.com/leocodeio-njs/njs-health/commit/dac76e3eecc82d6f226e15a83eae1e512597596d))
+
 # 1.0.0 (2025-04-17)
 
 
