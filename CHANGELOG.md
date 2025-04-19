@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/leocodeio-njs/njs-health/compare/v1.0.1...v1.0.2) (2025-04-19)
+
+
+### Performance Improvements
+
+* **readme:** readme ([15a7a2e](https://github.com/leocodeio-njs/njs-health/commit/15a7a2e626705e0e1b90bc2f1f02e5942a7b4832))
+
 ## [1.0.1](https://github.com/leocodeio-njs/njs-health/compare/v1.0.0...v1.0.1) (2025-04-19)
 
 
