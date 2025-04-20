@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/leocodeio-njs/njs-health/compare/v1.0.4...v1.0.5) (2025-04-20)
+
+
+### Performance Improvements
+
+* **pakcage update:** pakcage update ([1a869d8](https://github.com/leocodeio-njs/njs-health/commit/1a869d84c5fd821c51ea5bd7c37620e9dec189fc))
+
 ## [1.0.4](https://github.com/leocodeio-njs/njs-health/compare/v1.0.3...v1.0.4) (2025-04-20)
 
 
