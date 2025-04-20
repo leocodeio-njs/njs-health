@@ -39,7 +39,7 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@20.17.30)(typescript@5.8.3)
       commitlint:
-        specifier: ^19.7.1
+        specifier: ^19.8.0
         version: 19.8.0(@types/node@20.17.30)(typescript@5.8.3)
       esbuild:
         specifier: ^0.20.2
@@ -64,13 +64,13 @@ importers:
         version: 24.2.3(typescript@5.8.3)
     devDependencies:
       '@commitlint/cli':
-        specifier: ^19.7.1
+        specifier: ^19.8.0
         version: 19.8.0(@types/node@20.17.30)(typescript@5.8.3)
       '@commitlint/config-conventional':
-        specifier: ^19.7.1
+        specifier: ^19.8.0
         version: 19.8.0
       '@commitlint/cz-commitlint':
-        specifier: ^19.6.1
+        specifier: ^19.8.0
         version: 19.8.0(@types/node@20.17.30)(commitizen@4.3.1(@types/node@20.17.30)(typescript@5.8.3))(inquirer@9.2.15)(typescript@5.8.3)
       '@nestjs/cli':
         specifier: ^10.4.9
