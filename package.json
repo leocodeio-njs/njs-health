@@ -1,6 +1,6 @@
 {
   "name": "@leocodeio-njs/njs-health",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "basic health check module for nestjs",
   "author": "leocodeio",
   "license": "MIT",
