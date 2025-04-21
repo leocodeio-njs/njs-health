@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/leocodeio-njs/njs-health/compare/v1.0.5...v1.0.6) (2025-04-21)
+
+
+### Performance Improvements
+
+* **update apckages:** update apckages ([5897bff](https://github.com/leocodeio-njs/njs-health/commit/5897bfff4872e430c6afb20ce32e09937dc88e0d))
+
 ## [1.0.5](https://github.com/leocodeio-njs/njs-health/compare/v1.0.4...v1.0.5) (2025-04-20)
 
 
