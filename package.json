@@ -36,7 +36,7 @@
     "@nestjs/core": "^11.0.20",
     "@nestjs/platform-express": "^10.4.17",
     "@nestjs/swagger": "^7.4.2",
-    "@nestjs/terminus": "^10.3.0",
+    "@nestjs/terminus": "^11.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "commitizen": "^4.3.1",
