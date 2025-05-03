@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/leocodeio-njs/njs-health/compare/v1.0.9...v1.0.10) (2025-05-03)
+
+
+### Performance Improvements
+
+* **added servie to index:** added servie to index ([f4be6f1](https://github.com/leocodeio-njs/njs-health/commit/f4be6f1b97b748dbadbb73f4994501f1bcabf801))
+
 ## [1.0.9](https://github.com/leocodeio-njs/njs-health/compare/v1.0.8...v1.0.9) (2025-05-03)
 
 
