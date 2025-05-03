@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/leocodeio-njs/njs-health/compare/v1.0.8...v1.0.9) (2025-05-03)
+
+
+### Performance Improvements
+
+* **moved response and performance to logging:** moved response and performance to logging ([76a92aa](https://github.com/leocodeio-njs/njs-health/commit/76a92aadedf057b8f60605e262f91abfa86efb57))
+
 ## [1.0.8](https://github.com/leocodeio-njs/njs-health/compare/v1.0.7...v1.0.8) (2025-04-21)
 
 
